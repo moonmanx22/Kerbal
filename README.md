@@ -9,7 +9,9 @@ By defualt the programs are set to follow the booster, select the Remote Guidanc
 To follow upper stage change code as shown below:
 
 In falconbooster.ks change:
+
 FROM:
+
  function main {
     doSystemsCheck().
     SET genoutputmessage TO "".
@@ -22,7 +24,9 @@ FROM:
     doHoverSlam().
     doSafingSequence().
  }
+
 TO:
+
  function main {
     doSystemsCheck().
     SET genoutputmessage TO "".
@@ -37,7 +41,9 @@ TO:
  }
 
 In dragon2.ks change:
+
 FROM:
+
  function Main{
     doBurn().
     //doCircularization().
@@ -46,7 +52,9 @@ FROM:
     //doEntry().
     //doHoverSlam().
  }
+
 TO:
+
  function Main{
     doBurn().
     doCircularization().
